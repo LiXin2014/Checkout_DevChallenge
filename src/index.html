@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/devchallenges.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Checkout</title>
+</head>
+<body>
+    <div id="container">
+        <div class="heading">Checkout</div>
+        <main>
+            <div class="checkout">
+                <form action="">
+                    <div class="contact-container">
+                        <div class="contact-heading">Contact infomation</div>
+                        <label for="email">E-mail</label>
+                        <div class="input">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <input type="email" name="" id="email" placeholder="Enter your email...">
+                        </div>
+        
+                        <label for="phone">Phone</label>
+                        <div class="input">
+                            <span class="material-icons">
+                                phone
+                                </span>
+                            <input type="text" name="" id="phone" placeholder="Enter your phone...">
+                        </div>
+                    </div>
+        
+                    <div class="shipping-container">
+                        <div class="shipping-heading">Shipping address</div>
+                        <label for="name">Full name</label>
+                        <div class="input">
+                            <span class="material-icons">
+                                account_circle
+                                </span>
+                            <input type="text" name="" id="name" placeholder="Your name...">
+                        </div>
+        
+                        <label for="address">Address</label>
+                        <div class="input">
+                            <span class="material-icons">
+                                home
+                                </span>
+                            <input type="text" name="" id="address" placeholder="You address...">
+                        </div>
+        
+                        <label for="city">City</label>
+                        <div class="input">
+                            <span class="material-icons">
+                                apartment
+                                </span>
+                            <input type="text" name="" id="city" placeholder="You city...">
+                        </div>
+        
+                        <div class="countryAndPostal">
+                            <div class="country">
+                                <label for="country">Country</label>
+                                <div class="input">
+                                    <span class="material-icons">
+                                        public
+                                        </span>
+                                    <select name="" id="country">
+                                        <option value="">Your country...</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="China">China</option>
+                                        <option value="Mexico">Mexico</option>
+                                    </select>
+                                </div>
+                            </div>
+            
+                            <div class="postal">
+                                <label for="postal">Postal code</label>
+                                <div class="input">
+                                    <span class="material-icons">
+                                        markunread_mailbox
+                                        </span>
+                                    <input type="text" name="" id="postal" placeholder="You postal code...">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="saveinfo">
+                            <input type="checkbox" name="" id="saveinfo">
+                            <span>Save this information for next time</span>
+                        </div>
+                    </div>
+        
+                    <button onsubmit="">Continue</button>
+                </form>
+            </div>
+
+            <div class="products">
+                    <div class="product-item">
+                        <img src="./resources/photo1.png" alt="">
+                        <div class="product-info">
+                            <div class="product-name">Vintage Backbag</div>
+                            <div class="product-price">
+                                <span class="final-price">$54.99</span>
+                                <span class="orig-price">$94.99</span>
+                            </div>
+                            <div class="product-count">
+                                <span class="material-icons" onclick="remove(this)">
+                                    remove
+                                    </span>
+                                <span class="count">1</span>
+                                <span class="material-icons" onclick="add(this)">
+                                    add
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./resources/photo2.png" alt="">
+                        <div class="product-info">
+                            <div class="product-name">Levi Shoes</div>
+                            <div class="product-price">
+                                <span class="final-price">$74.99</span>
+                                <span class="orig-price">$124.99</span>
+                            </div>
+                            <div class="product-count">
+                                <span class="material-icons" onclick="remove(this)">
+                                    remove
+                                    </span>
+                                <span class="count">1</span>
+                                <span class="material-icons" onclick="add(this)">
+                                    add
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costs">
+                        <div class="shipping-cost">
+                            <div class="name">Shipping</div>
+                            <div class="cost">$19</div>
+                        </div>
+                        <div class="total-cost">
+                            <div class="name">Total</div>
+                            <div class="cost">$148.98</div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="created-by">created by <a class="author" href="https://github.com/LiXin2014">@LiXin2014</a> -
+                devChallenges.io</div>
+        </footer>
+    </div>
+</body>
+</html>
