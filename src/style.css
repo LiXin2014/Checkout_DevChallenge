@@ -279,7 +279,13 @@ footer .author {
     color: #BDBDBD;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:1200px) {
+    main {
+        gap: 20px;
+    }
+} 
+
+@media screen and (max-width:750px) {
     main {
         display: flex;
         flex-direction: column-reverse;
@@ -289,7 +295,9 @@ footer .author {
         margin-top: 54px;
     }
 } 
+
 /*
 NOTES:
 1. Sometimes in a flex container, you want left and right item take half space each. For example like `.product-item img` and `.product-item .product-info`. But it won't work, then try set the bigger one `min-width: 0;`
+2. when use gap in grid layout. like "gap: 100px" in the main tag. The screen won't be responsive when the screen becomes smaller 100px of gap between colums of the grid is too much
 */
