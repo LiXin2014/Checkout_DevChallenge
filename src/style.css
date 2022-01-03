@@ -28,15 +28,18 @@ body {
 }
 
 main {
+    width: 100%;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
-    margin: 50px 50px;
+    padding: 50px 50px;
     gap: 100px;
 }
 
 .heading {
+    width: 100%;
     font-size: 36px;
     color: var(--header-color);
     margin-left: 50px;
