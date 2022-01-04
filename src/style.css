@@ -89,10 +89,11 @@ main {
 
 .checkout input {
     border: none;
-    color: var(--border-color);
-    font-size: 16px;
     outline: none;
     width: 100%;
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 [placeholder]{
