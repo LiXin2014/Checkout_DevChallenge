@@ -21,31 +21,31 @@
                 <form action="">
                     <div class="contact-container">
                         <div class="contact-heading">Contact infomation</div>
-                        <label for="email">E-mail</label>
-                        <div class="input">
+                        <label for="email">E-mail (required)</label>
+                        <div class="input" id="email-container">
                             <span class="material-icons">
                                 email
                             </span>
-                            <input type="email" name="" id="email" placeholder="Enter your email...">
+                            <input type="email" name="" id="email" placeholder="Enter your email..." required type="email">
                         </div>
         
                         <label for="phone">Phone</label>
-                        <div class="input">
+                        <div class="input" id="phone-container">
                             <span class="material-icons">
                                 phone
                                 </span>
-                            <input type="text" name="" id="phone" placeholder="Enter your phone...">
+                            <input type="text" name="" id="phone" placeholder="Enter your phone..." pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
                         </div>
                     </div>
         
                     <div class="shipping-container">
                         <div class="shipping-heading">Shipping address</div>
-                        <label for="name">Full name</label>
-                        <div class="input">
+                        <label for="name">Full name (required)</label>
+                        <div class="input" id="name-container">
                             <span class="material-icons">
                                 account_circle
                                 </span>
-                            <input type="text" name="" id="name" placeholder="Your name...">
+                            <input type="text" name="" id="name" placeholder="Your name..." required>
                         </div>
         
                         <label for="address">Address</label>
@@ -83,11 +83,11 @@
             
                             <div class="postal">
                                 <label for="postal">Postal code</label>
-                                <div class="input">
+                                <div class="input" id="postal-container">
                                     <span class="material-icons">
                                         markunread_mailbox
                                         </span>
-                                    <input type="text" name="" id="postal" placeholder="You postal code...">
+                                    <input type="text" name="" id="postal" placeholder="You postal code..." pattern="^\d{5}(?:[-\s]\d{4})?$">
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
         
-                    <button onsubmit="">Continue</button>
+                    <button type="submit" onclick="onSubmit()">Continue</button>
                 </form>
             </div>
 

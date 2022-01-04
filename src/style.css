@@ -75,6 +75,12 @@ main {
     margin-bottom: 20px;
 }
 
+.checkout .invalid-input {
+    border: 2px solid red;
+
+    transition: all 0.5s ease-in-out;
+}
+
 .checkout .input .material-icons {
     margin-right: 18px;
     margin-left: 14px;
@@ -124,6 +130,17 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus, 
+select:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
     color: #333333;
     font-size: 16px;
