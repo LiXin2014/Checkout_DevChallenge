@@ -42,6 +42,7 @@ main {
     width: 100%;
     font-size: 36px;
     color: var(--header-color);
+    margin-top: 50px;
     margin-left: 50px;
     align-self: center;
 }
@@ -285,6 +286,7 @@ footer {
     color: #BDBDBD;
     align-self: flex-end;
     justify-self: center;
+    margin-top: 54px;
 }
 
 footer .created-by {
@@ -307,10 +309,6 @@ footer .author {
     main {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    footer {
-        margin-top: 54px;
     }
 } 
 
